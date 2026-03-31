@@ -208,7 +208,7 @@ body.black-page .gnb a{
     line-height: 30px;
     text-align: right;
     position: absolute;
-    top: 60%;
+    top: 75%;
     right: 13%;
     z-index: 1; 
     pointer-events: none;
