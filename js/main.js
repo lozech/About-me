@@ -159,7 +159,7 @@ function createContentSection(title, leftImg, rightImg, link, isFirst, desc1, de
                     ? `
                     <p class="renewal">“ Renewal of Landing page”</p>
                     <p class="content-desc">
-                        기존 콘텐츠를 분석하고 재구성하여 메시지를 효과적으로 전달할 수 있는 랜딩페이지를 구현했습니다.
+                        메시지를 효과적으로 전달할 수 있는 랜딩페이지를 구현했습니다.
                     </p>`
                     : ""
             }
