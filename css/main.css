@@ -432,10 +432,11 @@ body.last #intro .quick-wrap{
     text-align: center;
 }
 #ui .ui-section .ui-desc2{
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 600;
     padding-bottom: 15px;
     box-sizing: border-box;
+    text-align: center;
 }
 #ui .ui-section .ui-sub{
     font-size: 25px;
@@ -463,18 +464,22 @@ body.last #intro .quick-wrap{
 
 #content{
     width: 100%;
+    scroll-snap-align: start;
 }
 #content .content-section{
+    width: 100%;
     height: 100vh;
     scroll-snap-align: start;
     margin: 0 auto;
-    padding: 40px 100px 0;
+    padding: 0px 100px;
     box-sizing: border-box;
     z-index: 1;
     scroll-margin-top: 1px;
 }
 #content .content-section .content-inner{
     position: relative;
+    padding-top: 40px;
+    box-sizing: border-box;
 }
 
 #content .content-section .content-title{
@@ -483,15 +488,17 @@ body.last #intro .quick-wrap{
     font-weight: 500;
 }
 #content .content-section .renewal{
+    text-align: center;
     font-size: 35px;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 50px;
     font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
 }
 #content .content-section .content-desc{
+    text-align: center;
     font-size: 20px;
     font-weight: 300;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     box-sizing: border-box;
 }
 #content .content-section .content-sub{
@@ -500,7 +507,7 @@ body.last #intro .quick-wrap{
     gap: 10px;
     align-items: center;
     font-weight: 300;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
     box-sizing: border-box;
 }
 #content .content-section .content-sub .link-btn{
@@ -516,38 +523,36 @@ body.last #intro .quick-wrap{
     }
 }
 #content .content-section .content-wrap{
-    width: 100%;
-    height: 100%;
-    margin-top: 100px;
+    width: 45%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: left; 
+    margin-top: 15px;
+    line-height: 35px;
+}
+#content .content-section .content-book{
     display: flex;
-    align-items: center;
-    gap: 60px;
+    gap: 50px;
     justify-content: center;
+    position: relative;
 }
 #content .content-section .content-book img {
-    width: 700px;
-    height: 500px; 
+    height: auto; 
     max-height: 45vh;
-    object-fit: contain;
 }
 #content .content-section.double .content-book{
     display: flex;
     flex-direction: column;
+    position: relative;
+    gap: 0px;
     align-items: center;
 }
-#content .content-section.double .content-book img{
-    width: 100%;
+#content .content-section.double .content-book img {
+    width: 800px;
     height: auto;
 }
 
-#content .content-section .desc-wrap{
-    width: 100%;
-    font-size: 20px;
-    text-align: left; 
-    margin-top: 20px;
-    line-height: 30px;
-}
-#content .content-section .desc-wrap .tits{
+#content .content-section .content-wrap .tits{
     font-weight: 600;
     display: inline-block;
     white-space: nowrap;
@@ -556,18 +561,24 @@ body.last #intro .quick-wrap{
     color: #383838;
     flex-shrink: 0;
 }
-#content .content-section .desc-wrap .content-img-desc .skill{
+#content .content-section .content-skill{
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    font-weight:500;
+}
+#content .content-section .content-img-desc .skill{
     font-weight: 700;
-    font-size: 22px;
+    font-size: 40px;
     font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
 }
-#content .content-section .desc-wrap .content-img-desc2{
+#content .content-section .content-img-desc2{
     display: flex;
     gap: 3px;
     word-break: keep-all;
     line-height: 30px;
 }
-#content .content-section .desc-wrap .content-img-desc2 .desc-text{
+#content .content-section .content-img-desc2 .desc-text{
     flex: 1;
     word-break: keep-all;
 }
@@ -581,7 +592,7 @@ body.last #intro .quick-wrap{
     height: 100vh;
     scroll-snap-align: start;
     margin: 0 auto;
-    padding: 60px 100px;
+    padding: 0px 100px;
     box-sizing: border-box;
     z-index: 1;
     scroll-margin-top: 1px;
@@ -598,15 +609,17 @@ body.last #intro .quick-wrap{
     font-weight: 500;
 }
 #web .web-section .renewal{
+    text-align: center;
     font-size: 35px;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 50px;
     font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
 }
 #web .web-section .web-desc{
+    text-align: center;
     font-size: 20px;
     font-weight: 300;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     box-sizing: border-box;
 }
 #web .web-section .web-sub{
@@ -615,7 +628,7 @@ body.last #intro .quick-wrap{
     gap: 10px;
     align-items: center;
     font-weight: 300;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
     box-sizing: border-box;
 }
 #web .web-section .web-sub .link-btn{
@@ -647,7 +660,7 @@ body.last #intro .quick-wrap{
     margin: 0 auto;
     text-align: left; 
     margin-top: 20px;
-    line-height: 30px;
+    line-height: 35px;
 }
 #web .web-section .web-wrap .tits{
     font-weight: 600;
@@ -658,9 +671,15 @@ body.last #intro .quick-wrap{
     color: #383838;
     flex-shrink: 0;
 }
-#web .web-section .web-wrap .web-img-desc .skill{
+#web .web-section .web-skill{
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    font-weight:500;
+}
+#web .web-section .web-img-desc .skill{
     font-weight: 700;
-    font-size: 22px;
+    font-size: 40px;
     font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
 }
 #web .web-section .web-wrap .web-img-desc2{
@@ -672,11 +691,6 @@ body.last #intro .quick-wrap{
 #web .web-section .web-wrap .web-img-desc2 .desc-text{
     flex: 1;
     word-break: keep-all;
-}
-#web .web-section.logo-type .web-book img:first-child {
-    width: 120px;
-    height: auto;
-    object-fit: contain;
 }
 
 
