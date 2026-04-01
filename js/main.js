@@ -248,7 +248,7 @@ function createWebSection(title, leftImg, rightImg, link, isFirst, desc1, desc2,
                     ? `
                     <p class="renewal">“ Renewal of Website ”</p>
                     <p class="web-desc">
-                        기존 사이트를 분석하고 디테일 있게 재구성하여 완성도 있는 사이트 리뉴얼을 진행하였습니다.
+                        기존 사이트를 분석하고 디테일 있게 재구성하여 재미있게 사이트 구현을 진행하였습니다.
                     </p>`
                     : ""
             }

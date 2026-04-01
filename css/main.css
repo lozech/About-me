@@ -598,10 +598,9 @@ body.last #intro .quick-wrap{
     font-weight: 500;
 }
 #web .web-section .renewal{
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     line-height: 40px;
-    text-align: center;
     font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
 }
 #web .web-section .web-desc{
@@ -609,7 +608,6 @@ body.last #intro .quick-wrap{
     font-weight: 300;
     padding-bottom: 50px;
     box-sizing: border-box;
-    text-align: center;
 }
 #web .web-section .web-sub{
     font-size: 25px;
