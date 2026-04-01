@@ -96,9 +96,6 @@ function createFirstUISection(type, title, leftImg, rightImg) {
         <div class="ui-inner">
             <p class="ui-title">UI Design</p>
             <p class="ui-desc2">Skill : Photoshop</p>
-            <p class="ui-desc">
-                “ 클래식부터 키치한 디자인까지, 다양한 컨셉을 시도하며 표현의 폭을 넓혀가고 있습니다. ” 
-            </p>
             
 
             <div class="ui-sub">
@@ -108,7 +105,7 @@ function createFirstUISection(type, title, leftImg, rightImg) {
 
             <div class="ui-book">
                 <img src="${leftImg}" alt="">
-                <img src="${rightImg}" alt="">
+                <img src="${rightImg}" alt="" class="rightimg">
             </div>
         </div>
     `;
@@ -126,7 +123,7 @@ function createUISection(type, title, leftImg, rightImg) {
 
             <div class="ui-book">
                 <img src="${leftImg}" alt="">
-                <img src="${rightImg}" alt="">
+                <img src="${rightImg}" alt="" class="rightimg">
             </div>
         </div>
     `;
@@ -176,7 +173,7 @@ function createContentSection(title, leftImg, rightImg, link, isFirst, desc1, de
 
             <div class="content-book">
                 <img src="${leftImg}" alt="">
-                ${rightImg ? `<img src="${rightImg}" alt="">` : ""}
+                ${rightImg ? `<img src="${rightImg}" alt="" class="rightimg">` : ""}
             </div>
                 
             <div class="content-wrap">

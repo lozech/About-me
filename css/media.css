@@ -1,1 +1,276 @@
 @charset "UTF-8";
+
+@media (max-width: 1550px) {
+    #index-page .tit{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    #index-page .tit .toggle{
+        position: absolute;
+        top: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #index-page .gnb{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 26px;
+    }
+    #index-page .name-card{
+        text-align: center;
+        top: 65%;
+        right: 0%;
+    }
+    #intro{
+        padding: 50px 15vh;
+        box-sizing: border-box;
+    }
+    #intro .top-section{
+        display: flex;
+        flex-direction: column;
+    }
+    #intro .top-section .intro-txt{
+        margin-bottom: 20px;
+    }
+    #intro .top-section .intro-wrap{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #intro .top-section .intro-wrap .skills .skill{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 400px;
+    }
+    #intro .bold2{
+        line-height: 0px;
+    }
+    #web .web-section .web-wrap{
+        width: 60%;
+        overflow-wrap: break-word;
+    }
+    #content .content-section .content-wrap{
+        width: 60%;
+        overflow-wrap: break-word;
+    }
+    #content .content-section.double .content-book{
+        flex-direction: column;
+    }
+    #last-page .name-card{
+        text-align: center;
+        top: 65%;
+        right: 0%;
+    }
+}
+@media (max-width: 1190px){
+    #ui .ui-section .ui-book .rightimg{
+        display: none;
+    }
+}
+@media (max-width: 1000px){
+    #intro {
+        padding: 50px 8%;
+        box-sizing: border-box;
+    }
+    #intro .top-section .intro-wrap{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #web .web-section{
+        margin: 0;
+        padding: 0;
+    }
+    #web .web-section .web-title{
+        margin-left: 30px;
+    }
+    #web .web-section .web-sub{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    #web .web-section .web-sub .link-btn{
+        margin: 0;
+        padding: 0;
+        animation: none;
+    }
+    #web .web-section .web-book img{
+        width: 95%;
+    }
+    #web .web-section .web-wrap{
+        width: 80%;
+        overflow-wrap: break-word;
+    }
+
+    #content .content-section{
+        margin: 0;
+        padding: 0;
+    }
+    #content .content-section .content-title{
+        margin-left: 30px;
+    }
+    #content .content-section .content-sub{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    #content .content-section .content-sub .link-btn{
+        margin: 0;
+        padding: 0;
+        animation: none;
+    }
+    #content .content-section .content-book img{
+        width: 95%;
+    }
+    #content .content-section.double .content-book .rightimg{
+        display: none;
+    }
+    #content .content-section .content-wrap{
+        width: 80%;
+        overflow-wrap: break-word;
+    }
+
+    #web-info{
+        line-height: 50px;
+    }
+    #web-info .renewal{
+        font-size: 50px;
+    }
+    #web-info .web-desc{
+        font-size: 18px;
+    }
+    #content-info{
+        line-height: 50px;
+    }
+    #content-info .renewal{
+        font-size: 50px;
+    }
+    #content-info .content-desc{
+        font-size: 18px;
+    }
+    #ui .ui-section .ui-title{
+        text-align: center;
+    }
+    #ui .ui-section{
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+        margin-bottom: 100px;
+    }
+    #ui .ui-section .ui-book img{
+        width: 95%;
+    }
+    #ui .ui-section .ui-sub{
+        justify-content: center;
+    }
+
+    #ui-info{
+        line-height: 50px;
+    }
+    #ui-info .renewal{
+        font-size: 50px;
+    }
+    #ui-info .ui-desc{
+        font-size: 18px;
+    }
+}
+@media (max-width: 830px){
+    #intro{
+        height: 1500px;
+        padding: 0vh 10vh;
+        box-sizing: border-box;
+    }
+    #intro .top-section .intro-wrap{
+        flex-direction: column;
+    }
+    #intro .top-section .second-line{
+        margin-top: 30px;
+    }
+    #intro .quick-wrap{
+        white-space: nowrap;
+    }
+    #content .content-section.double .content-book img{
+        width: 90%;
+    }
+}
+@media (max-width: 800px){
+    #index-page .tit .tit1{
+        font-size: 45px;
+    }
+    #index-page .gnb{
+        font-size: 18px;
+    }
+    #last-page .tit .tit1{
+        font-size: 45px;
+    }
+}
+@media (max-width: 600px){
+    #content .content-section .content-title{
+        text-align: center;
+    }
+    #content .content-section .content-sub{
+        display: flex;
+        align-items: center
+    }
+    #web .web-section .web-title{
+        text-align: center;
+    }
+    #web .web-section .web-sub{
+        display: flex;
+        align-items: center
+    }
+    #content .content-section .content-skill{
+        font-size: 28px;
+        margin-left: 30px;
+    }
+    #content .content-section .content-img-desc .skill{
+        font-size: 30px;
+    }
+    #content .content-section .content-sub .type2{
+        display: none;
+    }
+    #web .web-section .web-skill{
+        font-size: 28px;
+        margin-left: 28px;
+    }
+    #web .web-section .web-img-desc .skill{
+        font-size: 30px;
+    }
+    #web .web-section .web-sub .type2{
+        display: none;
+    }
+    #web-info{
+        line-height: 50px;
+    }
+    #web-info .renewal{
+        font-size: 35px;
+    }
+    #web-info .web-desc{
+        font-size: 16px;
+    }
+    #content-info{
+        line-height: 50px;
+    }
+    #content-info .renewal{
+        font-size: 30px;
+    }
+    #content-info .content-desc{
+        font-size: 16px;
+    }
+
+    #ui-info{
+        line-height: 50px;
+    }
+    #ui-info .renewal{
+        font-size: 35px;
+    }
+    #ui-info .ui-desc{
+        font-size: 16px;
+    }
+}

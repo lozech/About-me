@@ -82,7 +82,7 @@ body.black-page a{
 #index-page .e{
     width: 45px;
     height: 45px;
-    position: relative;
+    position: absolute;
 }
 #index-page .edge1{
     border: 1px solid #757575;
@@ -95,32 +95,33 @@ body.black-page a{
     border: 1px solid #757575;
     border-left: none;
     border-bottom: none;
-    top: 5%;
-    left: 90%;
+    top: 10%;
+    right: 10%;
 }
 #index-page .edge3{
     border: 1px solid #757575;
     border-right: none;
     border-top: none;
-    top: 80%;
+    bottom: 10%;
     left: 10%;
 }
 #index-page .edge4{
     border: 1px solid #757575;
     border-left: none;
     border-top: none;
-    top: 75%;
-    left: 90%;
+    bottom: 10%;
+    right: 10%;
 }
 
 #index-page .tit{
     width: 100%;
     margin: 0 auto;
-    padding-top: 20vh;
+    padding-top: 35vh;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 0.8fr auto 1fr;
     align-items: center;
+    transition: all 0.5s;
 }
 #index-page .tit .tit1{
     grid-column: 2;
@@ -128,6 +129,7 @@ body.black-page a{
     font-size: 75px;
     position: relative;
     justify-self: start;
+    transition: all 0.5s;
 }
 #index-page .tit .tit1::after{
     content: "HELLO::";
@@ -148,6 +150,7 @@ body.black-page a{
     font-weight: 600;
     grid-column: 3;
     justify-self: center;
+    transition: all 0.5s;
 }
 body.black-page .toggle{
     color: #ffffffda;
@@ -182,12 +185,13 @@ body.black-page .toggle .white-toggle:hover{
     line-height: 50px;
     margin: 0 auto;
     text-align: left;
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 50px;
     font-weight: 300;
     font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif; 
     z-index: 9999; 
     position: relative;
+    transition: all 0.5s;
 }
 body.black-page .gnb a{
     font-weight: 400;
@@ -216,13 +220,12 @@ body.black-page .gnb a{
     line-height: 30px;
     text-align: right;
     position: absolute;
-    top: 75%;
-    right: 13%;
+    top: 72%;
+    right: 15%;
     z-index: 1; 
     pointer-events: none;
+    transition: all 0.5s;
 }
-
-
 
 #intro{
     width: 100%;
@@ -230,6 +233,7 @@ body.black-page .gnb a{
     padding: 10vh 25vh;
     box-sizing: border-box;
     position: relative;
+    transition: all 0.5s;
 }
 #intro .quick-wrap{
     position: fixed;
@@ -313,6 +317,10 @@ body.last #intro .quick-wrap{
 
 /* 버튼 스타일 */
 .sub-menu span {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 20px;
     font-size: 14px;
     padding: 5px 8px;
     border-radius: 50%;
@@ -331,26 +339,20 @@ body.last #intro .quick-wrap{
 }
 #intro .top-section{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 0.9fr 1fr;
     align-items: start;
+    transition: all 0.5s;
 }
 #intro .top-section .intro-txt{
     font-size: 30px;
     line-height: 50px;
     font-family: "KblJumpExtended", "Pretendard Variable", sans-serif;
+    transition: all 0.5s;
 }
-#intro .top-section .intro-txt .thin2{
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
-    font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;     
-}
-#intro .top-section .intro-txt .thin1-1{
-    margin-top: 20px;
-}
-#intro .top-section .intro-txt .thin4{
-    margin-top: 10px;
+#intro .top-section .intro-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: all 0.3s;
 }
 #intro .top-section .bold,
 #intro .top-section .thin{
@@ -376,6 +378,7 @@ body.last #intro .quick-wrap{
     color: #414042;
     font-weight: 500;
     margin-bottom: 10px;
+    transition: all 0.5s;
 }
 #intro .thin{
     font-size: 18px;
@@ -426,13 +429,6 @@ body.last #intro .quick-wrap{
     font-size: 35px;
     font-weight: 500;
 }
-#ui .ui-section .ui-desc{
-    font-size: 20px;
-    font-weight: 300;
-    padding-bottom: 50px;
-    box-sizing: border-box;
-    text-align: center;
-}
 #ui .ui-section .ui-desc2{
     font-size: 30px;
     font-weight: 600;
@@ -461,6 +457,7 @@ body.last #intro .quick-wrap{
 #ui .ui-section .ui-book img {
     height: 65vh;
     object-fit: contain;
+    transition: all 0.5s;
 }
 
 
@@ -488,6 +485,7 @@ body.last #intro .quick-wrap{
     margin-bottom: 15px;
     font-size: 35px;
     font-weight: 500;
+    transition: all 0.5s;
 }
 #content .content-section .content-sub{
     font-size: 25px;
@@ -497,10 +495,15 @@ body.last #intro .quick-wrap{
     font-weight: 300;
     padding-bottom: 5px;
     box-sizing: border-box;
+    transition: all 0.5s;
+}
+#content .content-section .content-sub .type2{
+    transition: all 0.5s;
 }
 #content .content-section .content-sub .link-btn{
     font-weight: 400;
     animation: impact 1.2s ease-in-out infinite alternate;
+    transition: all 0.5s;
 }
 @keyframes impact{
     0%{
@@ -517,12 +520,14 @@ body.last #intro .quick-wrap{
     text-align: left; 
     margin-top: 15px;
     line-height: 35px;
+    transition: all 0.5s;
 }
 #content .content-section .content-book{
     display: flex;
     gap: 50px;
     justify-content: center;
     position: relative;
+    transition: all 0.5s;
 }
 #content .content-section .content-book img {
     height: auto; 
@@ -534,11 +539,16 @@ body.last #intro .quick-wrap{
     position: relative;
     gap: 0px;
     align-items: center;
+    transition: all 0.5s;
+}
+#content .content-section.double .content-book .rightimg{
+    transition: all 0.5s;
 }
 #content .content-section.double .content-book img {
     width: 800px;
     height: auto;
     object-fit: contain;
+    transition: all 0.5s;
 }
 
 #content .content-section .content-wrap .tits{
@@ -555,11 +565,13 @@ body.last #intro .quick-wrap{
     line-height: 70px;
     font-size: 30px;
     font-weight:500;
+    transition: all 0.5s;
 }
 #content .content-section .content-img-desc .skill{
     font-weight: 700;
     font-size: 40px;
     font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
+    transition: all 0.5s;
 }
 #content .content-section .content-img-desc2{
     display: flex;
@@ -585,6 +597,7 @@ body.last #intro .quick-wrap{
     box-sizing: border-box;
     z-index: 1;
     scroll-margin-top: 1px;
+    transition: all 0.5s;
 }
 #web .web-section .web-inner{
     position: relative;
@@ -596,6 +609,7 @@ body.last #intro .quick-wrap{
     margin-bottom: 15px;
     font-size: 35px;
     font-weight: 500;
+    transition: all 0.5s;
 }
 
 #web .web-section .web-sub{
@@ -606,10 +620,15 @@ body.last #intro .quick-wrap{
     font-weight: 300;
     padding-bottom: 5px;
     box-sizing: border-box;
+    transition: all 0.5s;
+}
+#web .web-section .web-sub .type2{
+    transition: all 0.5s;
 }
 #web .web-section .web-sub .link-btn{
     font-weight: 400;
     animation: point 1.2s ease-in-out infinite alternate;
+    transition: all 0.5s;
 }
 @keyframes point{
     0%{
@@ -628,6 +647,7 @@ body.last #intro .quick-wrap{
 #web .web-section .web-book img {
     height: auto; 
     max-height: 45vh;
+    transition: all 0.5s;
 }
 
 #web .web-section .web-wrap{
@@ -637,6 +657,7 @@ body.last #intro .quick-wrap{
     text-align: left; 
     margin-top: 20px;
     line-height: 35px;
+    transition: all 0.5s;
 }
 #web .web-section .web-wrap .tits{
     font-weight: 600;
@@ -661,12 +682,10 @@ body.last #intro .quick-wrap{
 #web .web-section .web-wrap .web-img-desc2{
     display: flex;
     gap: 3px;
-    word-break: keep-all;
     line-height: 30px;
 }
 #web .web-section .web-wrap .web-img-desc2 .desc-text{
     flex: 1;
-    word-break: keep-all;
 }
 
 
@@ -683,7 +702,7 @@ body.last #intro .quick-wrap{
 #last-page .e{
     width: 45px;
     height: 45px;
-    position: relative;
+    position: absolute;
 }
 #last-page .edge1{
     border: 1px solid #757575;
@@ -696,39 +715,37 @@ body.last #intro .quick-wrap{
     border: 1px solid #757575;
     border-left: none;
     border-bottom: none;
-    top: 5%;
-    left: 90%;
+    top: 10%;
+    right: 10%;
 }
 #last-page .edge3{
     border: 1px solid #757575;
     border-right: none;
     border-top: none;
-    top: 80%;
+    bottom: 10%;
     left: 10%;
 }
 #last-page .edge4{
     border: 1px solid #757575;
     border-left: none;
     border-top: none;
-    top: 75%;
-    left: 90%;
+    bottom: 10%;
+    right: 10%;
 }
 
 #last-page .tit{
     width: 100%;
     margin: 0 auto;
-    padding-top: 20vh;
+    padding-top: 35vh;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
+    transition: all 0.5s;
 }
 #last-page .tit .tit1{
-    grid-column: 2;
     font-family: "KblJumpExtended", "Pretendard Variable", sans-serif;
     font-size: 75px;
     position: relative;
-    justify-self: start;
+    text-align: center;
+    transition: all 0.5s;
 }
 #last-page .tit .tit1::after{
     width: fit-content;
@@ -739,8 +756,8 @@ body.last #intro .quick-wrap{
     color: lightblue;
     position: absolute;
     top: -10px;
-    left: 80%;
-    transform: translateX(-80%);
+    left: 60%;
+    transform: translateX(-60%);
 }
 #last-page .name-card{
     width: 100%;
@@ -755,6 +772,7 @@ body.last #intro .quick-wrap{
     right: 13%;
     z-index: 1; 
     pointer-events: none;
+    transition: all 0.5s;
 }
 
 #web-info{
@@ -769,9 +787,11 @@ body.last #intro .quick-wrap{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
 }
 #web-info .renewal{
     font-size: 70px;
+    transition: all 0.5s;
 }
 #web-info .web-desc{
     text-align: center;
@@ -780,6 +800,7 @@ body.last #intro .quick-wrap{
     padding-bottom: 20px;
     box-sizing: border-box;
     color: #000000ca;
+    transition: all 0.5s;
 }
 body.black-page #web-info .web-desc{
     color: #ffffffb9;
@@ -796,9 +817,11 @@ body.black-page #web-info .web-desc{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
 }
 #content-info .renewal{
     font-size: 70px;
+    transition: all 0.5s;
 }
 #content-info .content-desc{
     text-align: center;
@@ -807,7 +830,39 @@ body.black-page #web-info .web-desc{
     padding-bottom: 20px;
     box-sizing: border-box;
     color: #000000ca;
+    transition: all 0.5s;
 }
 body.black-page #content-info .content-desc{
+    color: #ffffffb9;
+}
+
+#ui-info{
+    height: 100vh;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -1px;
+    font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+#ui-info .renewal{
+    font-size: 70px;
+    transition: all 0.5s;
+}
+#ui-info .ui-desc{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    color: #000000ca;
+    transition: all 0.5s;
+}
+body.black-page #ui-info .ui-desc{
     color: #ffffffb9;
 }
