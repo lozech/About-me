@@ -154,15 +154,6 @@ sections.forEach((section, i) => {
 function createContentSection(title, leftImg, rightImg, link, isFirst, desc1, desc2, desc3) {
     return `
         <div class="content-inner">
-            ${
-                isFirst
-                    ? `
-                    <p class="renewal">“ Implementation of Landing page”</p>
-                    <p class="content-desc">
-                        메시지를 효과적으로 전달할 수 있는 랜딩페이지를 구현했습니다.
-                    </p>`
-                    : ""
-            }
             <p class="content-title">${title}</p>
 
             <div class="content-sub">
@@ -217,7 +208,7 @@ const data2 = [
         "HTML5/CSS3","메인", "일상과 여행에서 얻은 영감을 오감으로 풀어내는 브랜드 오티에이치콤마(Oth,), 압화도구/독서링/무드등과 같이 인테리어 소품을 판매하는 브랜드인만큼 감각적인 부분이 잘 드러나는 것에 집중한 프로젝트였습니다."],
     [
         4, "Ably-event", "./images/ably-event1.png", "./images/ably-event2.png", "https://lozech.github.io/ably/",
-        "HTML5/CSS3/JQuery","이벤트페이지", "처음으로 진행해본 팀프로젝트로서 에이블리 쇼핑몰 브랜드를 리뉴얼 해봤습니다. 기존 사이트의 PC버전 부재로 인해 리뉴얼 대상으로 선정하였습니다. 기존에 가독성이 떨어지던 이벤트 배너들을 상세페이지로 제작하며 기획 감각을 키워가고자 했습니다. 또한 의류브랜드로서의 감각을 부각하기 위해 HTML, CSS 중심 작업에서 나아가 JQuery를 활용해 인터랙션 기능을 직접 구현해봤습니다."],
+        "HTML5/CSS3/JQuery","이벤트페이지", "처음으로 진행한 팀프로젝트로서 에이블리 쇼핑몰을 리뉴얼 해봤습니다. 기존 사이트의 PC버전 부재로 인해 리뉴얼 대상으로 선정하였습니다. 기존에 가독성이 떨어지던 이벤트 배너들을 상세페이지로 제작하며 기획 감각을 키웠습니다. 또한 의류브랜드로서의 감각을 부각하기 위해 JQuery를 활용해 인터랙션 기능을 직접 구현해봤습니다."],
     [
         5, "Something Play", "./images/something.png", null, "https://lozech.github.io/somethingplay/",
         "HTML5/CSS3/JQuery","메인", "파주 헤이리마을에 위치한 소품샵 브랜드, 기존 사이트의 파비콘과 로고를 감각적으로 재디자인해보며 주도적으로 기획하고자 했던 첫번째 사이트 입니다. 자바스크립트를 활용하여 캐러셀 기능도 구현하며 부가요소들을 더 활용해보고자 했습니다."],
@@ -249,15 +240,6 @@ sections2.forEach((section2, i) => {
 function createWebSection(title, leftImg, rightImg, link, isFirst, desc1, desc2, desc3) {
     return `
         <div class="web-inner">
-            ${
-                isFirst
-                    ? `
-                    <p class="renewal">“ Implementation of Web Site ”</p>
-                    <p class="web-desc">
-                        기존 사이트를 디테일 있게 분석하여 완성도 높은 사이트 구현을 진행하고자 했습니다.
-                    </p>`
-                    : ""
-            }
             <p class="web-title">${title}</p>
 
             <div class="web-sub">

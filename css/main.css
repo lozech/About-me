@@ -468,7 +468,7 @@ body.last #intro .quick-wrap{
 }
 #content .content-section{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     scroll-snap-align: start;
     margin: 0 auto;
     padding: 0px 100px;
@@ -478,7 +478,7 @@ body.last #intro .quick-wrap{
 }
 #content .content-section .content-inner{
     position: relative;
-    padding-top: 40px;
+    padding-top: 50px;
     box-sizing: border-box;
 }
 
@@ -486,20 +486,6 @@ body.last #intro .quick-wrap{
     margin-bottom: 15px;
     font-size: 35px;
     font-weight: 500;
-}
-#content .content-section .renewal{
-    text-align: center;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 50px;
-    font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
-}
-#content .content-section .content-desc{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 300;
-    padding-bottom: 20px;
-    box-sizing: border-box;
 }
 #content .content-section .content-sub{
     font-size: 25px;
@@ -511,7 +497,7 @@ body.last #intro .quick-wrap{
     box-sizing: border-box;
 }
 #content .content-section .content-sub .link-btn{
-    font-weight: 600;
+    font-weight: 400;
     animation: impact 1.2s ease-in-out infinite alternate;
 }
 @keyframes impact{
@@ -519,7 +505,7 @@ body.last #intro .quick-wrap{
         transform: scale(1);
     }
     100%{
-        transform: scale(1.08);
+        transform: scale(1.04);
     }
 }
 #content .content-section .content-wrap{
@@ -542,7 +528,7 @@ body.last #intro .quick-wrap{
 }
 #content .content-section.double .content-book{
     display: flex;
-    flex-direction: column;
+    gap: 15px;
     position: relative;
     gap: 0px;
     align-items: center;
@@ -550,6 +536,7 @@ body.last #intro .quick-wrap{
 #content .content-section.double .content-book img {
     width: 800px;
     height: auto;
+    object-fit: contain;
 }
 
 #content .content-section .content-wrap .tits{
@@ -608,20 +595,7 @@ body.last #intro .quick-wrap{
     font-size: 35px;
     font-weight: 500;
 }
-#web .web-section .renewal{
-    text-align: center;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 50px;
-    font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
-}
-#web .web-section .web-desc{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 300;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-}
+
 #web .web-section .web-sub{
     font-size: 25px;
     display: flex;
@@ -632,7 +606,7 @@ body.last #intro .quick-wrap{
     box-sizing: border-box;
 }
 #web .web-section .web-sub .link-btn{
-    font-weight: 600;
+    font-weight: 400;
     animation: point 1.2s ease-in-out infinite alternate;
 }
 @keyframes point{
@@ -640,7 +614,7 @@ body.last #intro .quick-wrap{
         transform: scale(1);
     }
     100%{
-        transform: scale(1.08);
+        transform: scale(1.04);
     }
 }
 #web .web-section .web-book {
@@ -779,4 +753,53 @@ body.last #intro .quick-wrap{
     right: 13%;
     z-index: 1; 
     pointer-events: none;
+}
+
+#web-info{
+    height: 100vh;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -1px;
+    font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#web-info .renewal{
+    font-size: 70px;
+}
+#web-info .web-desc{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    color: #000000ca;
+}
+#content-info{
+    height: 100vh;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -1px;
+    font-family: "GTUltra-Regular", "Pretendard Variable", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#content-info .renewal{
+    font-size: 70px;
+}
+#content-info .content-desc{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    color: #000000ca;
 }
