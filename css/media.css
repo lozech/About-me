@@ -604,6 +604,9 @@
         padding: 0;
         margin-top: 50px;
     }
+    .ui-submenu {
+        transform: translate(-65%, 20px);
+    }
 }
 
 @media (max-width: 380px){
@@ -840,6 +843,9 @@
         margin: 0 auto;
         padding: 0;
         margin-top: 50px;
+    }
+    .ui-submenu {
+        transform: translate(-65%, 20px);
     }
 }
 
