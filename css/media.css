@@ -844,8 +844,13 @@
         padding: 0;
         margin-top: 50px;
     }
+    .content-submenu {
+        left: 40%;
+        transform: translate(-40%, 20px);
+    }
     .ui-submenu {
-        transform: translate(-65%, 20px);
+        left: 40%;
+        transform: translate(-40%, 20px);
     }
 }
 
