@@ -605,10 +605,12 @@
         margin-top: 50px;
     }
     .content-submenu{
+        bottom: 20%;
         left: 20%;
         transform: translate(-70%, 20px);
     }
     .ui-submenu {
+        bottom: 20%;
         left: 20%;
         transform: translate(-70%, 20px);
     }
