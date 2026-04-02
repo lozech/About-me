@@ -367,11 +367,15 @@
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 380px){
     #index-page{
         position: relative;
     }
     #index-page .tit{
+        width: 410px;
+        margin: 0 auto;
+        padding-top: 300px;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -388,6 +392,10 @@
     #index-page .gnb{
         position: static;
         transform: none;
+        width: 420px;
+        margin: 0 auto;
+        padding-top: 40px;
+        box-sizing: border-box;
         text-align: center;
         font-size: 16px;
         line-height: 5px;
@@ -406,7 +414,7 @@
     }
     #index-page .edge2{
         top: 5%;
-        right: 5%;
+        right: -19px;
     }
     #index-page .edge3{
         bottom: 1%;
@@ -414,16 +422,82 @@
     }
     #index-page .edge4{
         bottom: 1%;
-        right: 5%;
+        right: -19px;
+    }
+    #index-page .name-card{
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    #intro{
+        width: 100%;
+        text-align: center;
+    }
+    #intro .intro-txt{
+        width: 415px;
+        margin: 0 auto;
+    }
+    #intro .intro-wrap .first-line{
+        width: 380px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #intro .intro-wrap .second-line{
+        width: 380px;
+        margin: 0 auto;
+        text-align: center;
+        word-break: keep-all;
+    }
+
+    #web-info,
+    #content-info,
+    #ui-info{
+        min-height: 100vh;
+        padding-top: 100px;
+        box-sizing: border-box;
+    }
+    #web-info{
+        width: 420px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #web-info .renewal{
+        font-size: 25px;
+    }
+    #web-info .web-desc{
+        font-size: 20px;
+    }
+    #ui-info{
+        width: 410px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #ui-info .renewal{
+        font-size: 25px;
+    }
+    #ui-info .ui-desc{
+        font-size: 20px;
+    }
+    #content-info{
+        width: 410px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #content-info .renewal{
+        font-size: 25px;
+    }
+    #content-info .contet-desc{
+        font-size: 20px;
     }
 
     #last-page{
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
         position: relative;
+        overflow-x: visible;
     }
     #last-page .tit{
-        margin: 0px;
+        width: 420px;
+        margin: 0 auto;
         text-align: center;
     }
     #last-page .tit .tit1{
@@ -439,17 +513,92 @@
         position: absolute;
     }
     #last-page .edge1{
-        top: 5%;
+        top: 0;
+        left: 10%;
     }
     #last-page .edge2{
-        top: 5%;
-        right: 6%;
+        top: 0;
+        right: 0;
     }
     #last-page .edge3{
         bottom: 5%;
+        left: 10%;
     }
     #last-page .edge4{
         bottom: 5%;
-        right: 6%;
+        right: 0%;
+    }
+    #last-page .name-card{
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    #web{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #web .web-section{
+        width: 380px;
+        height: auto;
+        min-height: 100vh;
+        margin: 30px auto;
+    }
+    #web .web-section .web-title{
+        font-weight: 600;
+    }
+    #web .web-section .link-btn{
+        font-size: 22px;
+    }
+    #web .web-section .web-skill .web-img-desc{
+        width: 320px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+    }
+    #web .web-section .web-skill .web-img-desc .skill{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #content{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #content .content-section{
+        width: 380px;
+        height: auto;
+        min-height: 100vh;
+        margin: 30px auto;
+    }
+    #content .content-section .content-title{
+        font-weight: 600;
+    }
+    #content .content-section .link-btn{
+        font-size: 22px;
+    }
+    #content .content-section .content-skill .content-img-desc{
+        width: 320px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+    }
+    #content .content-section .content-skill .content-img-desc .skill{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #ui{
+        width: 420px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #ui .ui-section{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
     }
 }

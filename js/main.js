@@ -181,7 +181,7 @@ function createContentSection(title, leftImg, rightImg, link, isFirst, desc1, de
                 ${desc3?.trim() ? `
                     <p class="content-img-desc2">
                         <span class="tits">기획의도 :</span>
-                        <span class="desc-text">${desc3}</span>
+                        <span class="desc-text"> ${desc3}</span>
                     </p>` : ""
                 }
             </div>
@@ -252,7 +252,7 @@ function createWebSection(title, leftImg, rightImg, link, isFirst, desc1, desc2,
                 <div class="web-skill">
                     <p class="web-img-desc">
                         <span class="tits">Skills : </span>
-                        <span class="skill">${desc1}</span>
+                        <span class="skill"> ${desc1}</span>
                     </p>
                 </div>
             ` : ""}
