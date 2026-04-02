@@ -606,20 +606,20 @@
     }
     .content-submenu{
         left: 20%;
-        transform: translate(-20%, 20px);
+        transform: translate(-70%, 20px);
     }
     .ui-submenu {
         left: 20%;
-        transform: translate(-20%, 20px);
+        transform: translate(-70%, 20px);
     }
     .menu-item.active .ui-submenu{
         opacity: 1;
-        transform: translate(-20%, -10px);
+        transform: translate(-70%, -10px);
         pointer-events: auto;
     }
     .menu-item.active .content-submenu{
         opacity: 1;
-        transform: translate(-20%, -10px);
+        transform: translate(-70%, -10px);
         pointer-events: auto;
     }
 }
