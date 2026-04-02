@@ -171,6 +171,9 @@ body.black-page .toggle{
 body.black-page .toggle .black-toggle{
     color: #fff;
 }
+body.black-page .toggle .black-toggle:hover{
+    color: #fff;
+}
 body.black-page .toggle .white-toggle{
     color: #414042;
     transition: all 0.3s;
