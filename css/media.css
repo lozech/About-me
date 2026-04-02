@@ -366,3 +366,90 @@
         word-break: keep-all;
     }
 }
+
+@media (max-width: 400px){
+    #index-page{
+        position: relative;
+    }
+    #index-page .tit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: none;
+        line-height: 5px;
+    }
+
+    #index-page .tit .tit1{
+        position: relative;
+        transform: none;
+        font-size: 25px;
+    }
+
+    #index-page .gnb{
+        position: static;
+        transform: none;
+        text-align: center;
+        font-size: 16px;
+        line-height: 5px;
+    }
+    #index-page .tit .tit1::after{
+        position: absolute;
+        top: -10px;
+        font-size: 16px;
+    }
+    #index-page .e{
+        position: absolute;
+    }
+    #index-page .edge1{
+        top: 5%;
+        left: 5%;
+    }
+    #index-page .edge2{
+        top: 5%;
+        right: 5%;
+    }
+    #index-page .edge3{
+        bottom: 1%;
+        left: 5%;
+    }
+    #index-page .edge4{
+        bottom: 1%;
+        right: 5%;
+    }
+
+    #last-page{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+    #last-page .tit{
+        margin: 0px;
+        text-align: center;
+    }
+    #last-page .tit .tit1{
+        font-size: 30px;
+        line-height: 10px;
+    }
+    #last-page .tit .tit1::after{
+        position: absolute;
+        top: -20px;
+        font-size: 16px;
+    }
+    #last-page .e{
+        position: absolute;
+    }
+    #last-page .edge1{
+        top: 5%;
+    }
+    #last-page .edge2{
+        top: 5%;
+        right: 6%;
+    }
+    #last-page .edge3{
+        bottom: 5%;
+    }
+    #last-page .edge4{
+        bottom: 5%;
+        right: 6%;
+    }
+}

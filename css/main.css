@@ -128,7 +128,7 @@ body.black-page a{
     font-family: "KblJumpExtended", "Pretendard Variable", sans-serif;
     font-size: 75px;
     position: relative;
-    justify-self: start;
+    /* justify-self: start; */
     transition: all 0.5s;
 }
 #index-page .tit .tit1::after{
