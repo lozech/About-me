@@ -183,7 +183,7 @@ body.black-page .toggle .white-toggle:hover{
 }
 
 #index-page .gnb{
-    width: fit-content;
+    width: 250px;
     height: 20vh;
     line-height: 50px;
     margin: 0 auto;
@@ -294,6 +294,7 @@ body.last #intro .quick-wrap{
     color: #d5d5d5;
     cursor: pointer;
     transition: all 0.4s ease;
+    z-index: 10000;
 }
 .menu-item:hover{
     transform: scale(1.1);
@@ -310,6 +311,7 @@ body.last #intro .quick-wrap{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    z-index: 10000;
 }
 
 .menu-item.active .sub-menu {

@@ -67,19 +67,19 @@ function createSubMenu(sections, container) {
 }
 
 const menuItems = document.querySelectorAll(".menu-item");
+const isMobile = window.matchMedia("(hover: none)").matches;
 
-menuItems.forEach((item) => {
-    let timeout;
+menuItems.forEach(item => {
+    item.addEventListener("click", (e) => {
+        e.stopPropagation();
 
-    item.addEventListener("mouseenter", () => {
-        clearTimeout(timeout);
-        item.classList.add("active");
-    });
+        const isActive = item.classList.contains("active");
 
-    item.addEventListener("mouseleave", () => {
-        timeout = setTimeout(() => {
-        item.classList.remove("active");
-        }, 200);
+        menuItems.forEach(i => i.classList.remove("active"));
+
+        if (!isActive) {
+            item.classList.add("active");
+        }
     });
 });
 
