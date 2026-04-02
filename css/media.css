@@ -860,6 +860,8 @@
     .menu-item.active .content-submenu,
     .menu-item.active .ui-submenu{
         transform: translate(-70%, 50px); 
+        opacity: 1;
+        pointer-events: auto;
     }
 }
 
