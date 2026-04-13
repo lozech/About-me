@@ -172,8 +172,12 @@ function createContentSection(title, leftImg, rightImg, link, isFirst, desc1, de
             ` : ""}
 
             <div class="content-book">
-                <img src="${leftImg}" alt="">
-                ${rightImg ? `<img src="${rightImg}" alt="" class="rightimg">` : ""}
+                <a href="${link}" target="_blank">
+                    <img src="${leftImg}" alt="">
+                </a>
+                ${rightImg ? `<a href="${link}" target="_blank" class="link-btn">
+                    <img src="${rightImg}" alt="" class="rightimg">
+                </a>` : ""}
             </div>
                 
             <div class="content-wrap">
@@ -258,8 +262,12 @@ function createWebSection(title, leftImg, rightImg, link, isFirst, desc1, desc2,
             ` : ""}
             
             <div class="web-book">
-                <img src="${leftImg}" alt="">
-                ${rightImg ? `<img src="${rightImg}" alt="">` : ""}
+                <a href="${link}" target="_blank">
+                    <img src="${leftImg}" alt="">
+                </a>
+                ${rightImg ? `<a href="${link}" target="_blank" class="link-btn">
+                    <img src="${rightImg}" alt="" class="rightimg">
+                </a>` : ""}
             </div>
 
             <div class = "web-wrap">
